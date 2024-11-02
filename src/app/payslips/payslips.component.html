@@ -1,0 +1,231 @@
+<div class="main-divider">
+    <div>
+      <div>
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong style="flex: 1;">D.R Exports (Pvt) Ltd.</strong>
+            <strong style="text-align: right;">Pay Slips For the Month: {{months}}</strong>
+        </div>
+              </div>
+                <div style="border-bottom: 2px dotted black;"></div>
+      
+    
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong for="">Division {{companyName}}</strong><strong for="">{{department}}</strong>
+            <strong style="text-align: right;">-slips No: {{slipsNo}}</strong>
+            </div>
+        </div>
+    
+          <div>
+             <div style="display: flex; justify-content: space-between; align-items: center;">
+              <strong for="">Employee NO {{employeeNo}}</strong><strong for="">{{employeename}}</strong>  <strong for=""></strong>
+          </div>
+          
+            <div style="border-bottom: 2px dotted black;"></div>
+          
+            <div style="display: flex; align-items: center; border-bottom: 2px dotted black;">
+              <div style="flex: 1; text-align: center; padding-right: 10px;">
+                  <strong>Earnings</strong>
+              </div>
+              <div style="flex: 1; text-align: center;">
+                  <strong></strong>
+              </div>
+              <div style="flex: 1; text-align: center; padding-left: 10px;">
+                  <strong>Deductions</strong>
+              </div>
+          </div>
+          
+            
+          <div class="description" style="display: flex; justify-content: space-between; padding: 8px 0;">
+            <div style="flex: 1; text-align: left; padding-right: 10px;">
+                <strong class="description-first">Description</strong>
+            </div>
+            <div style="flex: 2; text-align: right; padding-right: 1px;">
+                <strong>Amount</strong>
+            </div>
+            <div style="flex: 2; text-align: left; padding-left: 10px;">
+                <strong class="description-second">Description</strong>
+            </div>
+            <div style="flex: 1; text-align: right; padding-left: 10px;">
+                <strong>Amount</strong>
+            </div>
+        </div>
+        
+            <div style="border-bottom: 2px dotted black;"></div>
+          </div>
+      </div>
+    
+    <div class="ernings">
+      <div class="erningss">
+        <span>Basic Salary : </span>  <strong class="" for="">{{ basicSalary | number:'1.2-2'}}</strong> 
+        
+      </div>
+    
+      <div class="erningss">
+        <span>No Pay Amount</span> <strong class="" for="">{{ noPayAmount |number:'1.2-2' }}</strong> 
+         </div>
+      
+      <div class="erningss">
+        <span>Target Insentive</span> <strong class="" for="">{{ targetIncetive |number:'1.2-2' }}</strong> 
+       
+      </div>
+    
+      <div class="erningss">
+        <span>late Hours</span> <strong for="" class="">{{ lateHours |number:'1.2-2'}}</strong> 
+        
+    
+      </div>
+      <div class="erningss">
+        <span>Attend. Allowance</span> <strong for="" class="">{{ attendAllowance |number:'1.2-2'}}</strong> 
+    
+      </div>
+      <div class="erningss">
+        <span>EPF 8%</span> <strong for="" class="">{{ epfEight |number:'1.2-2'}}</strong> 
+    
+      </div>
+      
+      <div class="erningss">
+        <span>B.R.A 2005</span> <strong for="" class="">{{ bra2005 |number:'1.2-2' }}</strong> 
+       
+      </div>
+      <div class="erningss">
+        <span>Salary Advance</span>  <strong for=""class="">{{ salaryAdvanced |number:'1.2-2'}}</strong> 
+    
+    
+      </div >
+      <div class="erningss">
+        <span>B.R.A 2016</span>  <strong for=""class="">{{ bra2016 |number:'1.2-2'}}</strong> 
+        
+      </div>
+      <div class="erningss">
+        <span>Festival Advance</span>  <strong class="" for="">{{ festivalAdvanced |number:'1.2-2'}}</strong> 
+        
+      </div>
+      <div class="erningss">
+        <span>Interim Allowance 2023</span> <strong class="" for="">{{ holidayPay |number:'1.2-2' }}</strong> 
+    
+      </div>
+      
+    
+      <div class="erningss">
+    <span class="">Special Loans</span>  <strong class="" for="">{{ specialLoans |number:'1.2-2' }}</strong> 
+     </div>
+    
+    <div class="erningss">
+      <span class="">Productivitiy Insentive</span>  <strong for="" class="">{{ productivityincentive |number:'1.2-2' }}</strong> 
+    </div>
+    
+    <div class="erningss">
+      <span class=""> Payee TAX</span>  <strong for="" class="">{{ payeeTax |number:'1.2-2' }}</strong> 
+    </div>
+    <div class="erningss">
+    <span>Ex P R On Service</span> <strong for="" class="">{{ exprServiceL |number:'1.2-2'}}</strong> 
+    </div>
+    <div class="erningss">
+      <span class="">  S.R.L</span>  <strong for="" class="">{{ holidayPay |number:'1.2-2' }}</strong> 
+    </div>
+    <div class="erningss">
+      <span class=""> Special Allowance</span>  <strong for="" class="">{{ specialAllowance |number:'1.2-2' }}</strong> 
+    </div>
+    <div class="erningss">
+    <span>Stamp Duty</span> <strong for="" class="">{{ stampDuty |number:'1.2-2'}}</strong> 
+    </div>
+    
+    <div class="erningss">
+      <span>Holiday Pay</span> <strong for="" class="">{{ holidayPay |number:'1.2-2'}}</strong> 
+      </div>
+      
+    
+      <div class="erningss">
+        <span>Special Deduction</span> <strong for="" class="">{{ specialDeduction |number:'1.2-2'}}</strong>
+        </div>
+       
+        <div class="erningss">
+          <span></span> <strong for="" class=""></strong> 
+          </div>
+          
+        
+          <div class="erningss">
+            <span>Coin c/f</span> <strong for="" class="">{{ coinCf |number:'1.2-2'}}</strong>
+            </div>
+    
+        <div class="erningss">
+          <span></span> <strong for="" class=""></strong> 
+          </div>
+          
+        <div class="erningss">
+          <span></span> <strong for=""></strong> 
+          </div>
+          <div class="erningss">
+            <span></span> <strong for=""></strong> 
+            </div>
+          
+          <div class="erningss">
+            <span> Total Deduction</span> <strong style="border-bottom: 1px solid black;"for="">{{ totalDeduction |number:'1.2-2'}}</strong>
+            </div>
+           
+          <div class="erningss">
+            <span>Gross Total for EPF</span> <strong for="">{{ holidayPay |number:'1.2-2'}}</strong>
+            </div>
+               
+          <div class="erningss">
+          <strong for=""></strong> <strong for=""> <strong for=""> <strong for=""></strong></strong></strong><strong>Nest Salary</strong> <strong for="">{{ holidayPay |number:'1.2-2'}}</strong>
+            </div>
+            
+                    
+            <div class="erningss">
+              <span>OT Amount Hours :<strong for="">{{otHours}}</strong></span> <strong for="">{{ otAmount |number:'1.2-2'}}</strong>
+              </div>
+              <div class="erningss">
+                <span></span> <strong for=""></strong>
+                </div>
+                <div class="erningss">
+                  <span>Coin b/f</span> <strong for="">{{ coinBF |number:'1.2-2'}}</strong>
+                  </div>
+                  <div class="erningss">
+                    <div style=" width: 50%;border-bottom: 2px dotted black;"></div><div style=" width: 50%;border-bottom: 2px dotted black;"></div>
+                    </div>
+    
+                    <div class="erningss">
+                      <span></span> <strong for=""></strong>
+                      </div>
+                      <div class="erningss">
+                        <span>EPF Employer Contribution</span> <strong for="">{{ ePFEmployerContribution |number:'1.2-2'}}</strong>
+                        </div>
+                        
+                    <div class="erningss">
+                      <span></span> <strong for=""></strong>
+                      </div>
+                      
+                         
+                    <div class="erningss">
+                    <span>ETF Employer Contribution </span> <strong style="border-bottom: 1px solid black;"for="">{{ etfEmployerContribution |number:'1.2-2'}}</strong>
+                      </div>
+                      
+                              
+                      <div class="erningss">
+                        <span>Extra OT </span> <strong style="border-bottom: 1px solid black;" for="">{{ extraOT |number:'1.2-2'}}</strong>
+                        </div>
+                        
+                        <div class="erningss">
+                          <span>Total Company Contribution</span> <strong for=""style="border-bottom:  double black;">{{ totalCompanyContribution |number:'1.2-2'}}</strong>
+                          </div>
+                          <div class="erningss">
+                            <span>Total Addition</span> <strong style="border-bottom:  double black;" for="">{{ totalAddition |number:'1.2-2'}}</strong>
+                            </div>
+                            <div class="erningss">
+                              <span></span> <strong for=""></strong>
+                              </div>
+                              <div class="erningss">
+                                <span>Total for Tax</span> <strong for="">{{ totalForTax |number:'1.2-2'}}</strong>
+                                </div>
+                                <div class="erningss">
+                                  <span >T.I Amount for EPF/ETF</span> <strong class="" for="">{{ tIAmountForEPFETF |number:'1.2-2'}}</strong>
+                                  </div>
+                                </div>
+                                
+                                  <div style="border-bottom: 2px dotted black;"></div>
+    
+                               
+    
+                                 
