@@ -1,27 +1,28 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .ernings {
-    margin-top: 1%;
-    margin: 1%;
-    display: grid;
-    grid-template-columns: 6fr 5fr;
-    gap: 10px;
-font-family: 'Courier New', Courier, monospace;
-  }
-  
-  .main-divider {
-    margin: 1%;
-  }
-  .descrption {
-    margin: 1%;
-  }
-  
-  .erningss {
-    display: flex;
-    justify-content: space-between;
-  
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+.ernings {
+  margin-top: 1%;
+  margin: 1%;
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+  gap: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main-divider {
+  margin: 1%;
+}
+.descrption {
+  margin: 1%;
+}
+
+.erningss {
+  display: flex;
+  justify-content: space-between;
+}
+.header-section{
+gap: 15px;
+}
