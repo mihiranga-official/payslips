@@ -18,7 +18,7 @@
     
           <div>
              <div style="display: flex; justify-content: space-between; align-items: center;">
-              <strong for="">Employee NO {{employeeNo}}</strong><strong for="">{{employeename}}</strong>  <strong for=""></strong>
+              <strong for="">Employee NO {{employeeNo}}</strong><strong for="">Emp.Name:Mr. {{employeename}}</strong>  <strong for=""></strong>
           </div>
           
             <div style="border-bottom: 2px dotted black;"></div>
@@ -57,12 +57,12 @@
     
     <div class="ernings">
       <div class="erningss">
-        <span>Basic Salary : </span>  <strong class="" for="">{{ basicSalary | number:'1.2-2'}}</strong> 
+        <span>Basic Salary  </span>  <strong class="" for="">{{ basicSalary | number:'1.2-2'}}</strong> 
         
       </div>
     
       <div class="erningss">
-        <span>No Pay Amount</span> <strong class="" for="">{{ noPayAmount |number:'1.2-2' }}</strong> 
+        <span>No Pay Amount</span> <label for="">{{nopayHours|number:'1.2-2'}}</label><label for="">{{noPayAmountForHours|number:'1.2-2'}}</label> <strong class="" for="">{{ noPayAmount |number:'1.2-2' }}</strong> 
          </div>
       
       <div class="erningss">
@@ -71,7 +71,7 @@
       </div>
     
       <div class="erningss">
-        <span>late Hours</span> <strong for="" class="">{{ lateHours |number:'1.2-2'}}</strong> 
+        <span>late Hours</span> <label for="">{{lateHours|number:'1.2-2'}}</label><label for="">{{lateHoursAmountForHours|number:'1.2-2'}}</label> <strong for="" class="">{{ lateHoursAmount |number:'1.2-2'}}</strong> 
         
     
       </div>
@@ -122,7 +122,7 @@
     <span>Ex P R On Service</span> <strong for="" class="">{{ exprServiceL |number:'1.2-2'}}</strong> 
     </div>
     <div class="erningss">
-      <span class="">  S.R.L</span>  <strong for="" class="">{{ holidayPay |number:'1.2-2' }}</strong> 
+      <span class="">  S.R.L</span>  <strong for="" class="">{{ sRL |number:'1.2-2' }}</strong> 
     </div>
     <div class="erningss">
       <span class=""> Special Allowance</span>  <strong for="" class="">{{ specialAllowance |number:'1.2-2' }}</strong> 
@@ -161,25 +161,31 @@
             </div>
           
           <div class="erningss">
-            <span> Total Deduction</span> <strong style="border-bottom: 1px solid black;"for="">{{ totalDeduction |number:'1.2-2'}}</strong>
+            <span> Total Deduction</span> <strong style="border-bottom:  double black;"for="">{{ totalDeduction |number:'1.2-2'}}</strong>
             </div>
            
           <div class="erningss">
-            <span>Gross Total for EPF</span> <strong for="">{{ holidayPay |number:'1.2-2'}}</strong>
+            <span>Gross Total for EPF</span> <strong for="">{{ grossTotalForEPF |number:'1.2-2'}}</strong>
             </div>
                
           <div class="erningss">
-          <strong for=""></strong> <strong for=""> <strong for=""> <strong for=""></strong></strong></strong><strong>Nest Salary</strong> <strong for="">{{ holidayPay |number:'1.2-2'}}</strong>
+         <strong></strong> <strong for=""></strong>
             </div>
             
                     
             <div class="erningss">
-              <span>OT Amount Hours :<strong for="">{{otHours}}</strong></span> <strong for="">{{ otAmount |number:'1.2-2'}}</strong>
+              <span>OT Amount Hours : <label for=""></label>  <label for=""></label> <strong for="">{{otHours}}</strong></span> <strong for="">{{ otAmount |number:'1.2-2'}}</strong>
               </div>
+              <div class="erningss">
+                <strong>Net Salary</strong> <strong for="">{{ netSalary |number:'1.2-2'}}</strong>
+                   </div>
               <div class="erningss">
                 <span></span> <strong for=""></strong>
                 </div>
-                <div class="erningss">
+                <div class="erningss" >
+                  <span></span> <strong for=""></strong>
+                  </div>
+                <div class="erningss" >
                   <span>Coin b/f</span> <strong for="">{{ coinBF |number:'1.2-2'}}</strong>
                   </div>
                   <div class="erningss">
@@ -198,12 +204,12 @@
                       </div>
                       
                          
-                    <div class="erningss">
+                    <div class="erningss"style="margin-bottom: 1%;">
                     <span>ETF Employer Contribution </span> <strong style="border-bottom: 1px solid black;"for="">{{ etfEmployerContribution |number:'1.2-2'}}</strong>
                       </div>
                       
                               
-                      <div class="erningss">
+                      <div class="erningss" >
                         <span>Extra OT </span> <strong style="border-bottom: 1px solid black;" for="">{{ extraOT |number:'1.2-2'}}</strong>
                         </div>
                         

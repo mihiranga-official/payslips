@@ -21,12 +21,12 @@ export class PayslipsComponent {
   //Starting Ernings sections
   basicSalary: number = 27750.000;
   targetIncetive: number = 13320.00
-  attendAllowance: number = 100.00
+  attendAllowance: number = 1000.00
 
   bra2005: number = 1000.00;
   bra2016: number = 1000.00;
   interimAllowance2023: number = 2500.00;
-  productivityincentive: number = 2500.00;
+  productivityincentive: number = 0.00;
 
   exprServiceL: number = 8450.00;
   specialAllowance: number = 10911.00
@@ -40,14 +40,23 @@ coinBF:number=-4.66
 
   //starting Deduction Section
   noPayAmount: number = 0.00
+  ///
+  nopayHours:number=0.00
+  noPayAmountForHours:number=1206.52
+
+  lateHoursAmount:number=0.00
   lateHours: number = 0;
+  lateHoursAmountForHours:number=150.82
+
+
   epfEight: number = 5594.50
   salaryAdvanced: number = 5000.00
   festivalAdvanced: number = 0.00
   specialLoans: number = 3245.04
   totalDeduction: number = 13866.00
+  netSalary:number=58170.00
   payeeTax: number = 0.00;
-  SRL:number=0.00
+  sRL:number=0.00
   stampDuty:number=25.00;
   specialDeduction: number = 0.00
   coinCf:number=1.49
